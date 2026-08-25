@@ -43,3 +43,8 @@ jobs:
         run: |
           cd ..
           flake8 . --statistics --max-complexity=10 --exit-zero
+
+      - name: Run tests with pytest
+        run: |
+          cd ..
+          pytest
